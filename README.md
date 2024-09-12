@@ -12,8 +12,8 @@ Then the server will run on port 3000.
 
 # .env configuration
 
-DATABASE_URL=your_database_url
-REDIS_URL=your_redis_url
-JWT_SECRET=your_secret_key
-PORT=3000
+* DATABASE_URL=your_database_url
+* REDIS_URL=your_redis_url
+* JWT_SECRET=your_secret_key
+* PORT=3000
 
