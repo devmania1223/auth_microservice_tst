@@ -1,16 +1,16 @@
 import { Pool } from 'pg';
 
-// export const pool = new Pool({
-//   connectionString: process.env.DATABASE_URL,
-// });
-
 export const pool = new Pool({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'postgres',
-  password: 'postgres',
-  port: 5432,
+  connectionString: process.env.DATABASE_URL,
 });
+
+// export const pool = new Pool({
+//   user: 'postgres',
+//   host: 'localhost',
+//   database: 'postgres',
+//   password: 'postgres',
+//   port: 5432,
+// });
 
 export const createUsersTable = async () => {
   try {
