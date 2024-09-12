@@ -1,8 +1,8 @@
 import app from './app';
 import dotenv from 'dotenv';
-// import { redisClient } from './utils/redis';
+import { redisClient } from './utils/redis';
 import { pool } from './utils/db';
-import { createUsersTable } from './utils/db';  // Import the table creation function
+import { createUsersTable } from './utils/db';  
 
 dotenv.config();
 
@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 const startServer = async () => {
   try {
     // Connect to Redis if applicable
-    // await redisClient.connect();
+    await redisClient.connect();
     
     console.log('DATABASE_URL:', process.env.DATABASE_URL);
 
