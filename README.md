@@ -10,5 +10,10 @@ To run the server please follow below commands.
   
 Then the server will run on port 3000.
 
-# .env directory.
+# .env configuration
+
+DATABASE_URL=your_database_url
+REDIS_URL=your_redis_url
+JWT_SECRET=your_secret_key
+PORT=3000
 
